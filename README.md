@@ -2,18 +2,23 @@
 
 
 
-## Prequisites
+## Prerequisite
 
-* Softwares: PLINK, R
+* PLINK
+
+* R
 
 * R packages:
 
-```R
-install.packages('BEDMatrix')
-install.packages('data.table')
-install.packages('parallel')
-```
+  ```R
+  # Install packages in R
+  
+  install.packages('BEDMatrix')
+  install.packages('data.table')
+  install.packages('parallel')
+  ```
 
+  
 
 
 ## Test
