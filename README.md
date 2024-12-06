@@ -26,7 +26,7 @@ git clone https://github.com/now2014/B2PRS.git
 
 * Test in R
 
-Here, we test the code with **chr21 & chr22** genotype data of 5 samples from the 1000 Genomes Project (in the `B2PRS/test-bed/` directory).
+Here, the genotype data in the `B2PRS/test-bed/` directory, which comes from the 1000 Genomes Project.
 
 ```R
 bed.file.pattern <- 'B2PRS/test-bed/1kg-eur-chr@.bed' # @ is replaced by chromosome number
@@ -63,7 +63,7 @@ print(PRS.results)
 | EAF.b.rds        | './PRS-b/EAF.b.rds'    | path to the RDS file with `'EAF'` and `'b'` for PRS calculation |
 | snp.info.rds     | './PRS-b/snp.info.rds' | path to the RDS file with SNP information                    |
 | bed.file.pattern | './chr@.bed'           | a pattern of bed file names, where '@' is replaced by chromosome number |
-| fill.missing     | 'mean'                 | a string of `'EAF'` and/or `'mean'` to fill missing genotype with `'EAF'` column or `'mean'` frequency derived from the input genotype data |
+| fill.missing     | 'mean'                 | a string of `'EAF'` or `'mean'` to fill missing genotype with `'EAF'` column or `'mean'` frequency derived from the input genotype data |
 | chunk.size       | 1000                   | max number of SNPs to be read from bed file in each chunk    |
 | mc.cores         | 1                      | number of cores for parallel computing                       |
 | PRS.name         | 'PRS'                  | name of the PRS column in the output                         |
@@ -72,7 +72,7 @@ print(PRS.results)
 
 ## Input RDS files
 
-* Please **make sure** that each **row** of the data.frame in the `snp.info.rds` **match** the corresponding **row** of the data.frame in the `EAF.b.rds`.
+* Please **make sure** that each **row** of the data.frame in the `snp.info.rds` **matches** the corresponding **row** of the data.frame in the `EAF.b.rds`.
 
 * Columns in `snp.info.rds`
 
@@ -86,6 +86,10 @@ print(PRS.results)
   # 5     1 779322  rs4040617  G  A
   # 6     1 838555  rs4970383  A  C
   ```
+
+  **CHROM: Chromosome number (1, 2, 3, ..., 22, 23)**
+
+  **POS: GRCh37 position**
 
   **EA: Effect Allele**
 
