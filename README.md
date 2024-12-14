@@ -135,7 +135,7 @@ This repository contains several pre-computed RDS files stored in the `./PRS-b` 
 
 * `EAF.b.rds`
 
-| GWAS sumstats | snp.info.rds                                           |
+| GWAS sumstats | EAF.b.rds                                              |
 | ------------- | ------------------------------------------------------ |
 | ALL_n30677    | EAF.b.TopSNPs.ALL_n30677_xgb_pred_proba.regenie.rds    |
 | FEMALE_n16600 | EAF.b.TopSNPs.FEMALE_n16600_xgb_pred_proba.regenie.rds |
@@ -148,7 +148,7 @@ This repository contains several pre-computed RDS files stored in the `./PRS-b` 
 * `snp.info.rds='snp.info.SumHEM.LDpred.rds' `
 * `EAF.b.rds`
 
-| GWAS sumstats | snp.info.rds                                          |
+| GWAS sumstats | EAF.b.rds                                             |
 | ------------- | ----------------------------------------------------- |
 | ALL_n30677    | EAF.b.SumHEM.ALL_n30677_xgb_pred_proba.regenie.rds    |
 | FEMALE_n16600 | EAF.b.SumHEM.FEMALE_n16600_xgb_pred_proba.regenie.rds |
