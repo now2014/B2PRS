@@ -1,4 +1,4 @@
-# Polygenic Risk Score (PRS) given independent genetic effects of variants
+#  Polygenic Risk Score (PRS) Calculation
 
 
 
@@ -116,3 +116,4 @@ print(PRS.results)
   **EAF: Effect Allele Frequency**
 
   **b: Independent genetic effect of EA**
+
