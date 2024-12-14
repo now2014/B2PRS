@@ -123,7 +123,7 @@ print(PRS.results)
 
 This repository contains several pre-computed RDS files stored in the `./PRS-b` directory:
 
-1. **TopSNPs** method (LD pruned ($r^2$ < 0.1) SNPs with GWAS p-value < 5e-8)
+1. **TopSNPs** method (LD pruned ($r^2$ < 0.1) variants with GWAS p-value < 5e-8)
 
 * `snp.info.rds`
 
