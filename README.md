@@ -117,3 +117,55 @@ print(PRS.results)
 
   **b: Independent genetic effect of EA**
 
+
+
+## Pre-computed RDS files
+
+This repository contains several pre-computed RDS files stored in the `./PRS-b` directory:
+
+1. **TopSNPs** method (LD pruned ($r^2$ < 0.1) SNPs with GWAS p-value < 5e-8)
+
+* `snp.info.rds`
+
+| GWAS sumstats | snp.info.rds                                              |
+| ------------- | --------------------------------------------------------- |
+| ALL_n30677    | snp.info.TopSNPs.ALL_n30677_xgb_pred_proba.regenie.rds    |
+| FEMALE_n16600 | snp.info.TopSNPs.FEMALE_n16600_xgb_pred_proba.regenie.rds |
+| MALE_n14077   | snp.info.TopSNPs.MALE_n14077_xgb_pred_proba.regenie.rds   |
+
+* `EAF.b.rds`
+
+| GWAS sumstats | snp.info.rds                                           |
+| ------------- | ------------------------------------------------------ |
+| ALL_n30677    | EAF.b.TopSNPs.ALL_n30677_xgb_pred_proba.regenie.rds    |
+| FEMALE_n16600 | EAF.b.TopSNPs.FEMALE_n16600_xgb_pred_proba.regenie.rds |
+| MALE_n14077   | EAF.b.TopSNPs.MALE_n14077_xgb_pred_proba.regenie.rds   |
+
+
+
+2. **SumHEM** method
+
+* `snp.info.rds='snp.info.SumHEM.LDpred.rds' `
+* `EAF.b.rds`
+
+| GWAS sumstats | snp.info.rds                                          |
+| ------------- | ----------------------------------------------------- |
+| ALL_n30677    | EAF.b.SumHEM.ALL_n30677_xgb_pred_proba.regenie.rds    |
+| FEMALE_n16600 | EAF.b.SumHEM.FEMALE_n16600_xgb_pred_proba.regenie.rds |
+| MALE_n14077   | EAF.b.SumHEM.MALE_n14077_xgb_pred_proba.regenie.rds   |
+
+
+
+3. **LDpred** method
+
+* `snp.info.rds='snp.info.SumHEM.LDpred.rds' `
+* `EAF.b.rds`
+
+| Model       | GWAS sumstats | EAF.b.rds                                                  |
+| ----------- | ------------- | ---------------------------------------------------------- |
+| LDpred-auto | ALL_n30677    | EAF.b.LDpred-Auto.ALL_n30677_xgb_pred_proba.regenie.rds    |
+| LDpred-auto | FEMALE_n16600 | EAF.b.LDpred-Auto.FEMALE_n16600_xgb_pred_proba.regenie.rds |
+| LDpred-auto | MALE_n14077   | EAF.b.LDpred-Auto.MALE_n14077_xgb_pred_proba.regenie.rds   |
+| LDpred-inf  | ALL_n30677    | EAF.b.LDpred-Inf.ALL_n30677_xgb_pred_proba.regenie.rds     |
+| LDpred-inf  | FEMALE_n16600 | EAF.b.LDpred-Inf.FEMALE_n16600_xgb_pred_proba.regenie.rds  |
+| LDpred-inf  | MALE_n14077   | EAF.b.LDpred-Inf.MALE_n14077_xgb_pred_proba.regenie.rds    |
