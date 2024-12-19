@@ -4,8 +4,6 @@
 
 ## Prerequisite
 
-* PLINK
-
 * R
 
 * R packages:
