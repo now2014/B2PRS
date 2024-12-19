@@ -82,28 +82,32 @@ print(PRS.results)
 * Columns in `snp.info.rds`
 
   ```R
-  head(readRDS('B2PRS/PRS-b/PRS-b/snp.info.SumHEM.LDpred.rds'))
-  #   CHROM    POS       rsid EA OA
-  # 1     1 752721  rs3131972  G  A
-  # 2     1 754182  rs3131969  G  A
-  # 3     1 760912  rs1048488  T  C
-  # 4     1 768448 rs12562034  A  G
-  # 5     1 779322  rs4040617  G  A
-  # 6     1 838555  rs4970383  A  C
+  head(readRDS('B2PRS/PRS-b/snp.info.SumHEM.LDpred.rds'))
+  #   CHROM    POS       rsid EA OA  POS38
+  # 1     1 752721  rs3131972  G  A 817341
+  # 2     1 754182  rs3131969  G  A 818802
+  # 3     1 760912  rs1048488  T  C 825532
+  # 4     1 768448 rs12562034  A  G 833068
+  # 5     1 779322  rs4040617  G  A 843942
+  # 6     1 838555  rs4970383  A  C 903175
   ```
 
-  **CHROM: Chromosome number (1, 2, 3, ..., 22, 23)**
+  CHROM (**required**): Chromosome number (1, 2, 3, ..., 22, 23)
 
-  **POS: GRCh37 position**
+  POS (optional): GRCh37 position
 
-  **EA: Effect Allele**
+  rsid  (**required**): RSID
 
-  **OA: Other allele**
+  EA (**required**): Effect Allele
+
+  OA (**required**): Other allele
+
+  POS38 (optional): GRCh38 position
 
 * Columns in the `EAF.b.rds`
 
   ```R
-  head(readRDS('B2PRS/PRS-b/PRS-b/EAF.b.SumHEM.FEMALE_n16600_xgb_pred_proba.regenie.rds'))
+  head(readRDS('B2PRS/PRS-b/EAF.b.SumHEM.FEMALE_n16600_xgb_pred_proba.regenie.rds'))
   #        EAF             b
   # 1 0.838825  2.734815e-10
   # 2 0.868619  1.987269e-06
@@ -113,9 +117,9 @@ print(PRS.results)
   # 6 0.244398 -7.139709e-06
   ```
 
-  **EAF: Effect Allele Frequency**
+  EAF (**required**): Effect Allele Frequency
 
-  **b: Independent genetic effect of EA**
+  b (**required**): Independent genetic effect of EA
 
 
 
