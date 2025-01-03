@@ -105,7 +105,7 @@ calc.PRS <- function(kept.snps, bed.file, fill.missing=c('mean', 'EAF')){
   X <- X + fill.mat
 
   b <- kept.snps[colnames(X), ]
-  b <- b[, setdiff(colnames(b), c('rsid', 'EA', 'OA', 'EAF')), drop=FALSE] # M SNPs x K traits
+  b <- b[, setdiff(colnames(b), c('rsid', 'EA', 'OA', 'EAF', 'POS38')), drop=FALSE] # M SNPs x K traits
   b <- as.matrix(b)
   b[is.na(b)] <- 0
 
